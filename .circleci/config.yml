@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: /tmp/build
+    docker:
+      - image: tegud/circleci-nodejs-checkless
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: npm install
+      - run:
+          name: generate
+          command: checkless generate
+      - run:
+          name: deploy
+          command: checkless deploy
+      - store_artifacts:
+          path: /tmp/build/.checkless/
+          
