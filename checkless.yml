@@ -1,0 +1,31 @@
+name: checkless
+region: eu-west-1
+httpEnabled: true
+checks:
+  tegud.net:
+    url: 'https://www.tegud.net'
+    checkEvery: 5 minutes
+    followRedirect: false
+    regions:
+      - eu-west-1
+      - us-east-1
+  sparkfitness:
+    url: 'https://www.sparkfitness.co.uk/'
+    checkEvery: 5 minutes
+    followRedirect: false
+    regions:
+      - eu-west-1
+  mrsdsdoggrooming:
+    url: 'https://www.mrsdsdoggrooming.com/'
+    checkEvery: 5 minutes
+    followRedirect: false
+    regions:
+      - eu-west-1
+notifications:
+  - slack:
+      webhookUrl: '${env:CHECKLESS_SLACK_WEBHOOK_PATH}'
+  - webhook:
+      webhookUrl: '${env:CHECKLESS_LOGZIO_WEBHOOK_PATH}'
+  - email:
+      sendTo: '${env:CHECKLESS_EMAIL_FAIL}'
+      sendOn: fail
