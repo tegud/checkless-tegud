@@ -9,6 +9,12 @@ checks:
     regions:
       - eu-west-1
       - us-east-1
+  ghost.tegud.net:
+    url: 'https://ghost.tegud.net'
+    checkEvery: 5 minutes
+    followRedirect: false
+    regions:
+      - eu-west-1
   sparkfitness:
     url: 'https://www.sparkfitness.co.uk/'
     checkEvery: 5 minutes
@@ -17,7 +23,7 @@ checks:
       - eu-west-1
   mrsdsdoggrooming:
     url: 'https://www.mrsdsdoggrooming.com/'
-    checkEvery: 5 minutes
+    checkEvery: 30 minutes
     followRedirect: false
     regions:
       - eu-west-1
