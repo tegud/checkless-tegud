@@ -4,11 +4,11 @@ httpEnabled: true
 checks:
   tegud.net:
     url: 'https://www.tegud.net'
-    checkEvery: 5 minutes
+    checkEvery: 3 minutes
     followRedirect: false
     regions:
       - eu-west-1
-      - us-east-1
+      - us-east-2
   ghost.tegud.net:
     url: 'https://ghost.tegud.net'
     checkEvery: 5 minutes
