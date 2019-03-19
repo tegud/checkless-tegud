@@ -32,6 +32,7 @@ checks:
 notifications:
   - slack:
       webhookUrl: '${env:CHECKLESS_SLACK_WEBHOOK_PATH}'
+      sendOn: fail
   - webhook:
       webhookUrl: '${env:CHECKLESS_LOGZIO_WEBHOOK_PATH}'
   - email:
