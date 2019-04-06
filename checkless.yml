@@ -32,6 +32,3 @@ notifications:
       sendOn: fail
   - webhook:
       webhookUrl: '${env:CHECKLESS_LOGZIO_WEBHOOK_PATH}'
-  - email:
-      sendTo: '${env:CHECKLESS_EMAIL_FAIL}'
-      sendOn: fail
