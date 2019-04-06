@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/tegud/checkless-tegud#readme",
   "dependencies": {
-    "checkless": "^2.1.0",
+    "checkless": "^2.1.1",
     "get-installed-path": "^4.0.8"
   },
   "devDependencies": {}
